@@ -1,0 +1,130 @@
+/* styles.css */
+
+/* Import Paprika font */
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
+/* General reset */
+body {
+    font-family: 'Paprika', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A8E6CF; /* soft mint background */
+    color: #2E2E2E;
+}
+
+/* Header and navigation */
+.site-header {
+    background: linear-gradient(135deg, #FF6B6B, #2E2E2E);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.navbar a {
+    color: #FFD93D;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background: rgba(255, 107, 107, 0.85); /* coral pink overlay */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: #FFD93D;
+}
+
+.hero-overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Container section */
+.container {
+    background-color: #FF6B6B; /* coral pink */
+    color: #FFD93D;
+    border: 3px solid #2E2E2E;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.primary-btn {
+    background-color: #FFD93D;
+    color: #2E2E2E;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-family: 'Paprika', serif;
+    font-weight: bold;
+}
+
+.primary-btn:hover {
+    background-color: #e0c236;
+}
+
+/* Card section with striped background */
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        #A8E6CF,
+        #A8E6CF 40px,
+        #FFD93D 40px,
+        #FFD93D 80px
+    );
+    border-radius: 12px;
+}
+
+/* Cards */
+.card {
+    background-color: rgba(255, 107, 107, 0.95); /* coral pink semi-transparent */
+    border: 2px solid #2E2E2E;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(46, 46, 46, 0.2);
+    color: #FFD93D;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.site-footer {
+    background: linear-gradient(135deg, #2E2E2E, #FF6B6B);
+    color: #FFD93D;
+    text-align: center;
+    padding: 15px;
+}
